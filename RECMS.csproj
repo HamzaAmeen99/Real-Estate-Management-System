@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4622554B-EBFE-44E1-BF0D-6ED10539ADEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RECMS</RootNamespace>
+    <AssemblyName>RECMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CEO\CEOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO\CEOForm.Designer.cs">
+      <DependentUpon>CEOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEO\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEO\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO\ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEO\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEO\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="FormHelper.cs" />
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\AddMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\AddMaterialForm.Designer.cs">
+      <DependentUpon>AddMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\AddProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\AddProjectForm.Designer.cs">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\AddUnitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\AddUnitForm.Designer.cs">
+      <DependentUpon>AddUnitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\LaborerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\LaborerForm.Designer.cs">
+      <DependentUpon>LaborerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\MaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\MaterialForm.Designer.cs">
+      <DependentUpon>MaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\MD_homeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\MD_homeForm.Designer.cs">
+      <DependentUpon>MD_homeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\ProjectDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\ProjectDetailsForm.Designer.cs">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\ProjectReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\ProjectReportForm.Designer.cs">
+      <DependentUpon>ProjectReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\ReportMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\ReportMain.Designer.cs">
+      <DependentUpon>ReportMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\UnitReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\UnitReportForm.Designer.cs">
+      <DependentUpon>UnitReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\UnitSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\UnitSaleForm.Designer.cs">
+      <DependentUpon>UnitSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MD\UnitsManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MD\UnitsManagementForm.Designer.cs">
+      <DependentUpon>UnitsManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SMM\SMM_homeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SMM\SMM_homeForm.Designer.cs">
+      <DependentUpon>SMM_homeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CEO\CEOForm.resx">
+      <DependentUpon>CEOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEO\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEO\ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEO\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\AddMaterialForm.resx">
+      <DependentUpon>AddMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\AddProjectForm.resx">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\AddUnitForm.resx">
+      <DependentUpon>AddUnitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\LaborerForm.resx">
+      <DependentUpon>LaborerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\MaterialForm.resx">
+      <DependentUpon>MaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\MD_homeForm.resx">
+      <DependentUpon>MD_homeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\ProjectDetailsForm.resx">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\ProjectReportForm.resx">
+      <DependentUpon>ProjectReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\ReportMain.resx">
+      <DependentUpon>ReportMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\UnitReportForm.resx">
+      <DependentUpon>UnitReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\UnitSaleForm.resx">
+      <DependentUpon>UnitSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MD\UnitsManagementForm.resx">
+      <DependentUpon>UnitsManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SMM\SMM_homeForm.resx">
+      <DependentUpon>SMM_homeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Forms\Images\3432671.jpg" />
+    <Content Include="Forms\Images\3572685.jpg" />
+    <Content Include="Forms\Images\4786.jpg" />
+    <Content Include="Forms\Images\6e81520f-0bd9-4a77-9ae7-2a4fb495c34b11.JPG" />
+    <Content Include="Forms\Images\8349.jpg" />
+    <Content Include="Forms\Images\hook.png" />
+    <Content Include="Forms\Images\investment.png" />
+    <Content Include="Forms\Images\property.png" />
+    <Content Include="Forms\Images\WhatsApp Image 2025-03-16 at 1.52.13 PM.jpeg" />
+    <None Include="Resources\WhatsApp_Image_2025-05-28_at_14.42.30_0e0faf68-removebg-preview.png" />
+    <None Include="Resources\WhatsApp_Image_2025-05-28_at_14.41.14_ee0dec2a-removebg-preview.png" />
+    <None Include="Resources\WhatsApp Image 2025-05-28 at 14.41.14_ee0dec2a.jpg" />
+    <None Include="Resources\Main Scene %282%29.gif" />
+    <None Include="Resources\Animation - 1748425236065.gif" />
+    <None Include="Resources\Animation - LottieFiles Platform - Google Chrome 2025-05-28 14-48-08.gif" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\remove %281%29.png" />
+    <None Include="Resources\eye_open.png" />
+    <None Include="Resources\eye_closed.png" />
+    <None Include="Resources\Color change.png" />
+    <None Include="Resources\3432671-removebg-preview1.png" />
+    <None Include="Resources\download-removebg-preview %281%29.png" />
+    <None Include="Resources\download__1_-removebg-preview %281%29.png" />
+    <None Include="Resources\download %281%291.jpeg" />
+    <None Include="Resources\download__1_-removebg-preview.png" />
+    <None Include="Resources\chart animation.gif" />
+    <None Include="Resources\Main Scene %281%29.gif" />
+    <None Include="Resources\Back round.png" />
+    <None Include="Resources\Back PNG.png" />
+    <None Include="Resources\BFS White.png" />
+    <None Include="Resources\WhatsApp_Image_2025-03-16_at_13.52.13_56f9fefa-removebg-preview2.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\3432671-removebg-preview.png" />
+    <None Include="Resources\WhatsApp_Image_2025-03-16_at_13.52.13_56f9fefa-removebg-preview1.png" />
+    <None Include="Resources\Screenshot 2025-04-04 154250.png" />
+    <None Include="Resources\WhatsApp_Image_2025-03-16_at_13.52.13_56f9fefa-removebg-preview.png" />
+    <None Include="Resources\download %281%291.png" />
+    <None Include="Resources\download.jpeg" />
+    <None Include="Resources\download %281%29.png" />
+    <None Include="Resources\download %281%29.jpeg" />
+    <None Include="Resources\download %282%29.jpeg" />
+    <None Include="Resources\bell.png" />
+    <None Include="Resources\50743921.png" />
+    <None Include="Resources\5074392.png" />
+    <None Include="Resources\3432671.jpg" />
+    <None Include="Resources\6e81520f-0bd9-4a77-9ae7-2a4fb495c34b111.JPG" />
+    <None Include="Resources\6e81520f-0bd9-4a77-9ae7-2a4fb495c34b11.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

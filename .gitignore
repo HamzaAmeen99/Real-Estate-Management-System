@@ -1,0 +1,73 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.log
+*.tlog
+*.cache
+*.vspscc
+*.vssscc
+
+# Visual Studio working folder
+.vs/
+
+# Windows image thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.msi
+*.cab
+*.msm
+*.msp
+
+# Packages and NuGet stuff
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.PackageRestore.json
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider files
+.idea/
+
+# Backup & temp files
+*.bak
+*.tmp
+*.swp
+*.orig
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# ASP.NET cache
+App_Data/
+
+# Publish outputs
+*.Publish.xml
+
+# Git metadata
+*.orig
+
+# Uncomment if you use Entity Framework migrations
+# Migrations/
+
+# Ignore local settings
+Properties/launchSettings.json
