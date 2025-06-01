@@ -167,7 +167,7 @@ namespace RECMS.Forms
 
         private void MaterialForm_Load(object sender, EventArgs e)
         {
-
+            FormDragHelper.MakeDraggable(this, panel1);
         }
 
         private async Task LoadMaterialsAndSuppliersAsync()

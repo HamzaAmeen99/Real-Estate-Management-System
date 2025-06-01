@@ -114,5 +114,11 @@ namespace RECMS.CEO
 
             this.Close(); // Close UserManageForm
         }
+
+        private void UserManageForm_Load(object sender, EventArgs e)
+        {
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
+        }
     }
 }

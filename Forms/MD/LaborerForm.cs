@@ -60,6 +60,8 @@ namespace RECMS.Forms.MD
 
                         transaction.Commit();
                         MessageBox.Show("Entry saved successfully!");
+                        ProjectDetailsForm detailsForm = new ProjectDetailsForm();
+                        detailsForm.Show();
                         this.Close();
                     }
                     catch (Exception ex)
@@ -243,6 +245,9 @@ namespace RECMS.Forms.MD
             LoadRoles();
             LoadContractors();
 
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
+
             // Add validation events
             cmbLaborer.KeyPress += ComboBox_KeyPress;
             cmbLaborer.Validating += ComboBox_Validating;
@@ -345,6 +350,12 @@ namespace RECMS.Forms.MD
                 MessageBox.Show("Only letters and spaces allowed!");
                 e.Cancel = true;
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Record entry canceled.", "Cancellation");
+            this.Close();
         }
     }
 }

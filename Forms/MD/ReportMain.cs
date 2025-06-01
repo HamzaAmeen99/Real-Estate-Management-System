@@ -422,5 +422,11 @@ namespace RECMS.Forms.MD
                     img.Dispose();
             }
         }
+
+        private void ReportMain_Load(object sender, EventArgs e)
+        {
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel2);
+        }
     }
 }

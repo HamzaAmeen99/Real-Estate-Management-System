@@ -523,7 +523,8 @@ namespace RECMS.Forms.MD
 
         private void ProjectReportForm_Load(object sender, EventArgs e)
         {
-
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel2);
         }
 
         private void ExportTabCharts(string tabName)

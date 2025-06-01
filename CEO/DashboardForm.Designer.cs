@@ -156,7 +156,6 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 63);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
@@ -188,7 +187,6 @@
             this.panelMainContent.Controls.Add(this.label3);
             this.panelMainContent.Controls.Add(this.panelExpenses);
             this.panelMainContent.Controls.Add(this.panelRevenue);
-            this.panelMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainContent.Location = new System.Drawing.Point(3, 2);
             this.panelMainContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMainContent.Name = "panelMainContent";
@@ -260,7 +258,7 @@
             // 
             // panelNetProfit
             // 
-            this.panelNetProfit.BackColor = System.Drawing.Color.OliveDrab;
+            this.panelNetProfit.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.panelNetProfit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelNetProfit.Controls.Add(this.lblTotalBudgetExpenses);
             this.panelNetProfit.Controls.Add(this.label9);
@@ -274,7 +272,7 @@
             // 
             this.lblTotalBudgetExpenses.AutoSize = true;
             this.lblTotalBudgetExpenses.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalBudgetExpenses.Location = new System.Drawing.Point(89, 56);
+            this.lblTotalBudgetExpenses.Location = new System.Drawing.Point(88, 56);
             this.lblTotalBudgetExpenses.Name = "lblTotalBudgetExpenses";
             this.lblTotalBudgetExpenses.Size = new System.Drawing.Size(43, 24);
             this.lblTotalBudgetExpenses.TabIndex = 7;
@@ -284,7 +282,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(84, 16);
+            this.label9.Location = new System.Drawing.Point(18, 56);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 24);
             this.label9.TabIndex = 5;
@@ -316,7 +314,7 @@
             // 
             this.lblTotalLaborExpenses.AutoSize = true;
             this.lblTotalLaborExpenses.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalLaborExpenses.Location = new System.Drawing.Point(89, 84);
+            this.lblTotalLaborExpenses.Location = new System.Drawing.Point(96, 71);
             this.lblTotalLaborExpenses.Name = "lblTotalLaborExpenses";
             this.lblTotalLaborExpenses.Size = new System.Drawing.Size(43, 24);
             this.lblTotalLaborExpenses.TabIndex = 6;
@@ -326,7 +324,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(84, 39);
+            this.label6.Location = new System.Drawing.Point(18, 71);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 24);
             this.label6.TabIndex = 4;
@@ -349,7 +347,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(72, 29);
+            this.label5.Location = new System.Drawing.Point(18, 70);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 24);
             this.label5.TabIndex = 1;
@@ -359,7 +357,7 @@
             // 
             this.lblTotalMaterialExpensesUnfiltered.AutoSize = true;
             this.lblTotalMaterialExpensesUnfiltered.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMaterialExpensesUnfiltered.Location = new System.Drawing.Point(89, 70);
+            this.lblTotalMaterialExpensesUnfiltered.Location = new System.Drawing.Point(116, 70);
             this.lblTotalMaterialExpensesUnfiltered.Name = "lblTotalMaterialExpensesUnfiltered";
             this.lblTotalMaterialExpensesUnfiltered.Size = new System.Drawing.Size(43, 24);
             this.lblTotalMaterialExpensesUnfiltered.TabIndex = 3;
@@ -598,7 +596,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.OliveDrab;
+            this.panel2.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblAvailableUnits);
             this.panel2.Controls.Add(this.label14);
@@ -612,7 +610,7 @@
             // 
             this.lblAvailableUnits.AutoSize = true;
             this.lblAvailableUnits.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvailableUnits.Location = new System.Drawing.Point(70, 52);
+            this.lblAvailableUnits.Location = new System.Drawing.Point(19, 79);
             this.lblAvailableUnits.Name = "lblAvailableUnits";
             this.lblAvailableUnits.Size = new System.Drawing.Size(43, 24);
             this.lblAvailableUnits.TabIndex = 7;
@@ -622,7 +620,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(38, 9);
+            this.label14.Location = new System.Drawing.Point(19, 40);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(148, 24);
             this.label14.TabIndex = 5;
@@ -644,7 +642,7 @@
             // 
             this.lblLastMonthSales.AutoSize = true;
             this.lblLastMonthSales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastMonthSales.Location = new System.Drawing.Point(83, 80);
+            this.lblLastMonthSales.Location = new System.Drawing.Point(19, 88);
             this.lblLastMonthSales.Name = "lblLastMonthSales";
             this.lblLastMonthSales.Size = new System.Drawing.Size(43, 24);
             this.lblLastMonthSales.TabIndex = 6;
@@ -654,7 +652,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(8, 8);
+            this.label15.Location = new System.Drawing.Point(8, 41);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(216, 24);
             this.label15.TabIndex = 4;
@@ -676,7 +674,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(12, 11);
+            this.label17.Location = new System.Drawing.Point(19, 35);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(205, 24);
             this.label17.TabIndex = 1;
@@ -686,7 +684,7 @@
             // 
             this.lblCurrentMonthSales.AutoSize = true;
             this.lblCurrentMonthSales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentMonthSales.Location = new System.Drawing.Point(83, 45);
+            this.lblCurrentMonthSales.Location = new System.Drawing.Point(19, 78);
             this.lblCurrentMonthSales.Name = "lblCurrentMonthSales";
             this.lblCurrentMonthSales.Size = new System.Drawing.Size(43, 24);
             this.lblCurrentMonthSales.TabIndex = 3;
@@ -711,6 +709,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectDetailsForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMatBack = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -41,15 +42,15 @@
             this.lblTotalExpenses = new System.Windows.Forms.Label();
             this.tabProgress = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgvdatamaterial = new System.Windows.Forms.DataGridView();
             this.panelT1 = new System.Windows.Forms.Panel();
+            this.cmbFilterMaterial = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDeleteMaterial = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbFilterSupplier = new System.Windows.Forms.ComboBox();
             this.btnAddMaterial = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbFilterMaterial = new System.Windows.Forms.ComboBox();
-            this.dgvdatamaterial = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDeleteLabor = new System.Windows.Forms.Button();
@@ -91,8 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabProgress.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panelT1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatamaterial)).BeginInit();
+            this.panelT1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLabor)).BeginInit();
@@ -125,7 +126,7 @@
             // 
             this.btnMatBack.Image = global::RECMS.Properties.Resources.Back_round;
             this.btnMatBack.Location = new System.Drawing.Point(1, 1);
-            this.btnMatBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMatBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnMatBack.Name = "btnMatBack";
             this.btnMatBack.Size = new System.Drawing.Size(44, 38);
             this.btnMatBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,7 +213,7 @@
             // 
             this.lblActiveLabor.AutoSize = true;
             this.lblActiveLabor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActiveLabor.Location = new System.Drawing.Point(52, 142);
+            this.lblActiveLabor.Location = new System.Drawing.Point(62, 142);
             this.lblActiveLabor.Name = "lblActiveLabor";
             this.lblActiveLabor.Size = new System.Drawing.Size(162, 28);
             this.lblActiveLabor.TabIndex = 1;
@@ -222,7 +223,7 @@
             // 
             this.lblBudgetUsed.AutoSize = true;
             this.lblBudgetUsed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBudgetUsed.Location = new System.Drawing.Point(52, 261);
+            this.lblBudgetUsed.Location = new System.Drawing.Point(55, 261);
             this.lblBudgetUsed.Name = "lblBudgetUsed";
             this.lblBudgetUsed.Size = new System.Drawing.Size(176, 28);
             this.lblBudgetUsed.TabIndex = 2;
@@ -254,8 +255,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.panelT1);
             this.tabPage1.Controls.Add(this.dgvdatamaterial);
+            this.tabPage1.Controls.Add(this.panelT1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
@@ -264,6 +265,21 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Material_Manage";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dgvdatamaterial
+            // 
+            this.dgvdatamaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdatamaterial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvdatamaterial.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dgvdatamaterial.Location = new System.Drawing.Point(3, 2);
+            this.dgvdatamaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvdatamaterial.Name = "dgvdatamaterial";
+            this.dgvdatamaterial.ReadOnly = true;
+            this.dgvdatamaterial.RowHeadersWidth = 62;
+            this.dgvdatamaterial.RowTemplate.Height = 28;
+            this.dgvdatamaterial.Size = new System.Drawing.Size(799, 351);
+            this.dgvdatamaterial.TabIndex = 0;
+            this.dgvdatamaterial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panelT1
             // 
@@ -277,11 +293,20 @@
             this.panelT1.Controls.Add(this.btnAddMaterial);
             this.panelT1.Controls.Add(this.label3);
             this.panelT1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelT1.Location = new System.Drawing.Point(3, 354);
+            this.panelT1.Location = new System.Drawing.Point(3, 353);
             this.panelT1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelT1.Name = "panelT1";
-            this.panelT1.Size = new System.Drawing.Size(799, 94);
+            this.panelT1.Size = new System.Drawing.Size(799, 95);
             this.panelT1.TabIndex = 1;
+            // 
+            // cmbFilterMaterial
+            // 
+            this.cmbFilterMaterial.FormattingEnabled = true;
+            this.cmbFilterMaterial.Location = new System.Drawing.Point(5, 34);
+            this.cmbFilterMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbFilterMaterial.Name = "cmbFilterMaterial";
+            this.cmbFilterMaterial.Size = new System.Drawing.Size(192, 24);
+            this.cmbFilterMaterial.TabIndex = 3;
             // 
             // label8
             // 
@@ -352,34 +377,10 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Filter by Materials:";
             // 
-            // cmbFilterMaterial
-            // 
-            this.cmbFilterMaterial.FormattingEnabled = true;
-            this.cmbFilterMaterial.Location = new System.Drawing.Point(5, 34);
-            this.cmbFilterMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbFilterMaterial.Name = "cmbFilterMaterial";
-            this.cmbFilterMaterial.Size = new System.Drawing.Size(192, 24);
-            this.cmbFilterMaterial.TabIndex = 3;
-            // 
-            // dgvdatamaterial
-            // 
-            this.dgvdatamaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdatamaterial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvdatamaterial.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dgvdatamaterial.Location = new System.Drawing.Point(3, 2);
-            this.dgvdatamaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvdatamaterial.Name = "dgvdatamaterial";
-            this.dgvdatamaterial.ReadOnly = true;
-            this.dgvdatamaterial.RowHeadersWidth = 62;
-            this.dgvdatamaterial.RowTemplate.Height = 28;
-            this.dgvdatamaterial.Size = new System.Drawing.Size(799, 446);
-            this.dgvdatamaterial.TabIndex = 0;
-            this.dgvdatamaterial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.dgvLabor);
+            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
@@ -559,7 +560,7 @@
             this.dgvLabor.ReadOnly = true;
             this.dgvLabor.RowHeadersWidth = 62;
             this.dgvLabor.RowTemplate.Height = 28;
-            this.dgvLabor.Size = new System.Drawing.Size(799, 446);
+            this.dgvLabor.Size = new System.Drawing.Size(799, 259);
             this.dgvLabor.TabIndex = 0;
             // 
             // tabPage3
@@ -809,7 +810,7 @@
             // 
             this.lblTotalBudgetExpenses.AutoSize = true;
             this.lblTotalBudgetExpenses.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalBudgetExpenses.Location = new System.Drawing.Point(129, 304);
+            this.lblTotalBudgetExpenses.Location = new System.Drawing.Point(97, 304);
             this.lblTotalBudgetExpenses.Name = "lblTotalBudgetExpenses";
             this.lblTotalBudgetExpenses.Size = new System.Drawing.Size(53, 28);
             this.lblTotalBudgetExpenses.TabIndex = 10;
@@ -819,7 +820,7 @@
             // 
             this.lblTotalMaterialExpensesUnfiltered.AutoSize = true;
             this.lblTotalMaterialExpensesUnfiltered.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMaterialExpensesUnfiltered.Location = new System.Drawing.Point(106, 90);
+            this.lblTotalMaterialExpensesUnfiltered.Location = new System.Drawing.Point(93, 90);
             this.lblTotalMaterialExpensesUnfiltered.Name = "lblTotalMaterialExpensesUnfiltered";
             this.lblTotalMaterialExpensesUnfiltered.Size = new System.Drawing.Size(53, 28);
             this.lblTotalMaterialExpensesUnfiltered.TabIndex = 9;
@@ -829,7 +830,7 @@
             // 
             this.lblTotalLaborExpenses.AutoSize = true;
             this.lblTotalLaborExpenses.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalLaborExpenses.Location = new System.Drawing.Point(106, 185);
+            this.lblTotalLaborExpenses.Location = new System.Drawing.Point(100, 185);
             this.lblTotalLaborExpenses.Name = "lblTotalLaborExpenses";
             this.lblTotalLaborExpenses.Size = new System.Drawing.Size(53, 28);
             this.lblTotalLaborExpenses.TabIndex = 8;
@@ -846,8 +847,10 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProjectDetailsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProjectDetailsForm";
             this.Load += new System.EventHandler(this.ProjectDetailsForm_Load);
             this.panel1.ResumeLayout(false);
@@ -856,9 +859,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabProgress.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatamaterial)).EndInit();
             this.panelT1.ResumeLayout(false);
             this.panelT1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvdatamaterial)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

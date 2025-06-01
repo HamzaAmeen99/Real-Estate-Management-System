@@ -97,6 +97,9 @@ namespace RECMS.Forms.MD
         private async void UnitsManagementForm_Load(object sender, EventArgs e)
         
         {
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
+
             LoadCustomerData(); // Load without date filter initially
             LoadPaymentStatusChart();
 

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SMM_homeForm));
             this.buttonClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -102,7 +103,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(142)))), ((int)(((byte)(136)))));
             this.label2.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
-            this.label2.Location = new System.Drawing.Point(165, 22);
+            this.label2.Location = new System.Drawing.Point(153, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(373, 40);
             this.label2.TabIndex = 30;
@@ -125,10 +126,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(142)))), ((int)(((byte)(136)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Location = new System.Drawing.Point(0, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 72);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(286, 726);
+            this.panel1.Size = new System.Drawing.Size(286, 734);
             this.panel1.TabIndex = 35;
             // 
             // pictureBox3
@@ -149,8 +150,8 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(142)))), ((int)(((byte)(136)))));
-            this.btnLogout.Location = new System.Drawing.Point(0, 665);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Location = new System.Drawing.Point(0, 673);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(286, 61);
             this.btnLogout.TabIndex = 5;
@@ -189,9 +190,9 @@
             this.tabUnitSales.Controls.Add(this.dgvSoldUnits);
             this.tabUnitSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabUnitSales.Location = new System.Drawing.Point(4, 25);
-            this.tabUnitSales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabUnitSales.Margin = new System.Windows.Forms.Padding(4);
             this.tabUnitSales.Name = "tabUnitSales";
-            this.tabUnitSales.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabUnitSales.Padding = new System.Windows.Forms.Padding(4);
             this.tabUnitSales.Size = new System.Drawing.Size(1304, 797);
             this.tabUnitSales.TabIndex = 1;
             this.tabUnitSales.Text = "Unit Sales";
@@ -305,17 +306,17 @@
             // 
             // chartSalesBySector
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartSalesBySector.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartSalesBySector.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartSalesBySector.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartSalesBySector.Legends.Add(legend1);
             this.chartSalesBySector.Location = new System.Drawing.Point(87, 445);
             this.chartSalesBySector.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartSalesBySector.Name = "chartSalesBySector";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartSalesBySector.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartSalesBySector.Series.Add(series1);
             this.chartSalesBySector.Size = new System.Drawing.Size(772, 178);
             this.chartSalesBySector.TabIndex = 2;
             this.chartSalesBySector.Text = "chart1";
@@ -359,9 +360,9 @@
             this.tabMilestones.Controls.Add(this.label6);
             this.tabMilestones.Controls.Add(this.label5);
             this.tabMilestones.Location = new System.Drawing.Point(4, 25);
-            this.tabMilestones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabMilestones.Margin = new System.Windows.Forms.Padding(4);
             this.tabMilestones.Name = "tabMilestones";
-            this.tabMilestones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabMilestones.Padding = new System.Windows.Forms.Padding(4);
             this.tabMilestones.Size = new System.Drawing.Size(1304, 797);
             this.tabMilestones.TabIndex = 0;
             this.tabMilestones.Text = "Project Progress";
@@ -372,7 +373,7 @@
             this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDownload.ForeColor = System.Drawing.Color.White;
-            this.btnDownload.Location = new System.Drawing.Point(474, 452);
+            this.btnDownload.Location = new System.Drawing.Point(474, 480);
             this.btnDownload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(363, 51);
@@ -480,6 +481,7 @@
             // 
             // picProjectImage
             // 
+            this.picProjectImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picProjectImage.Location = new System.Drawing.Point(474, 145);
             this.picProjectImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picProjectImage.Name = "picProjectImage";
@@ -492,7 +494,7 @@
             // 
             this.lblBudget.AutoSize = true;
             this.lblBudget.Font = new System.Drawing.Font("Clash Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBudget.Location = new System.Drawing.Point(152, 480);
+            this.lblBudget.Location = new System.Drawing.Point(254, 539);
             this.lblBudget.Name = "lblBudget";
             this.lblBudget.Size = new System.Drawing.Size(71, 23);
             this.lblBudget.TabIndex = 6;
@@ -502,11 +504,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Clash Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(83, 537);
+            this.label6.Location = new System.Drawing.Point(7, 533);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 32);
+            this.label6.Size = new System.Drawing.Size(222, 32);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Total Expense";
+            this.label6.Text = "Total Expense:";
             // 
             // label5
             // 
@@ -523,7 +525,7 @@
             this.tcmain.Controls.Add(this.tabMilestones);
             this.tcmain.Controls.Add(this.tabUnitSales);
             this.tcmain.Location = new System.Drawing.Point(286, 78);
-            this.tcmain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcmain.Margin = new System.Windows.Forms.Padding(4);
             this.tcmain.Name = "tcmain";
             this.tcmain.SelectedIndex = 0;
             this.tcmain.Size = new System.Drawing.Size(1312, 826);
@@ -542,8 +544,10 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SMM_homeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SMM_homeForm";
             this.Load += new System.EventHandler(this.SMM_homeForm_Load);
             this.panel1.ResumeLayout(false);

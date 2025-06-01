@@ -81,7 +81,8 @@ namespace RECMS.CEO
 
         private async void ReportsForm_Load(object sender, EventArgs e)
         {
-            
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
 
             // Set default dates to current month for Sales Over Time chart
             dtpSalesFrom.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);

@@ -52,8 +52,8 @@ namespace RECMS.CEO
             timerSales.Start();
 
             // Prevent auto scaling and sizing issues
-            this.AutoScaleMode = AutoScaleMode.None;
-            this.AutoSize = false;
+            //this.AutoScaleMode = AutoScaleMode.None;
+            //this.AutoSize = false;
 
             //// Lock form size strictly
             //Size fixedSize = new Size(1200, 800);
@@ -71,7 +71,7 @@ namespace RECMS.CEO
             printDocument1.PrintPage += printDocument_PrintPage;
 
             // Optional fix for display quirks
-            this.Shown += DashboardForm_Shown;
+            //this.Shown += DashboardForm_Shown;
         }
 
         private void DashboardForm_Shown(object sender, EventArgs e)
@@ -202,10 +202,10 @@ namespace RECMS.CEO
             UIHelpers.RoundButton(btnRefresh, 7);
             UIHelpers.RoundButton(btnSearch, 7);
             // Set the specific size
-            this.Size = new Size(1200, 800); // Width = 1200, Height = 800
+            //this.Size = new Size(1200, 800); // Width = 1200, Height = 800
 
-            // center the form on the screen
-            this.StartPosition = FormStartPosition.CenterScreen;
+            //// center the form on the screen
+            //this.StartPosition = FormStartPosition.CenterScreen;
             try
             {
                 await LoadProjectsAsync();
@@ -836,6 +836,8 @@ namespace RECMS.CEO
             _currentPrintGrid = dgvAvailableUnits;
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
+
+
         }
 
         private void panelRevenue_Paint_1(object sender, PaintEventArgs e)

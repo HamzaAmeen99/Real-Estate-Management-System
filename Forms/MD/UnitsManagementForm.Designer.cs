@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitsManagementForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -95,7 +96,7 @@
             // 
             this.pictureBox2.Image = global::RECMS.Properties.Resources.Back_round;
             this.pictureBox2.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(41, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,20 +212,20 @@
             // 
             // chartPaymentStatus
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartPaymentStatus.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chartPaymentStatus.ChartAreas.Add(chartArea1);
             this.chartPaymentStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartPaymentStatus.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chartPaymentStatus.Legends.Add(legend1);
             this.chartPaymentStatus.Location = new System.Drawing.Point(0, 0);
             this.chartPaymentStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPaymentStatus.Name = "chartPaymentStatus";
             this.chartPaymentStatus.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Legend = "Legend1";
-            series2.Name = "seriesPaymentStatus";
-            this.chartPaymentStatus.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "seriesPaymentStatus";
+            this.chartPaymentStatus.Series.Add(series1);
             this.chartPaymentStatus.Size = new System.Drawing.Size(254, 280);
             this.chartPaymentStatus.TabIndex = 43;
             this.chartPaymentStatus.Text = "chart1";
@@ -523,8 +524,10 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UnitsManagementForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UnitsManagementForm";
             this.Load += new System.EventHandler(this.UnitsManagementForm_Load);
             this.panel1.ResumeLayout(false);

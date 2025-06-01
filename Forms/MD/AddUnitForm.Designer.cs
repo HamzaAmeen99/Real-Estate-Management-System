@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUnitForm));
             this.lblUnit2 = new System.Windows.Forms.Label();
             this.StreetAddress = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -250,6 +251,7 @@
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblUnit4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddUnitForm";
             this.Text = "AddUnitForm";

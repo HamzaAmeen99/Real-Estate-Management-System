@@ -49,6 +49,9 @@ namespace RECMS.Forms.MD
 
         private async void UnitReportForm_Load(object sender, EventArgs e)
         {
+
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
             // Load DataGridView (synchronous operations)
             pivotedData = GetPivotedPaymentData();
             dgvSectorDetails.DataSource = pivotedData;
@@ -392,7 +395,7 @@ GROUP BY COALESCE(NULLIF(TRIM(pi.ProjectInterest), ''), 'Random Project')";
 
             try
             {
-                using (SqlConnection conn = new SqlConnection("Server=DESKTOP-8BL3MIG; Database=RE_DBMS; Integrated Security=True;"))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     await conn.OpenAsync();
                     string query = @"

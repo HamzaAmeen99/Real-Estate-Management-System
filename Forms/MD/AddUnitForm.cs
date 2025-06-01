@@ -117,6 +117,9 @@ namespace RECMS.Forms.MD
                             transaction.Commit();
 
                             MessageBox.Show("Unit added successfully!");
+                            UnitsManagementForm unitsForm = new UnitsManagementForm();
+                            unitsForm.Show();
+
                             this.Close();
                         }
                         catch (Exception ex)
@@ -149,7 +152,8 @@ namespace RECMS.Forms.MD
 
         private void AddUnitForm_Load(object sender, EventArgs e)
         {
-            
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -81,7 +81,8 @@ namespace RECMS.Forms.MD
 
         private void AddProjectForm_Load(object sender, EventArgs e)
         {
-
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaterialForm));
             this.txtMaterialName = new System.Windows.Forms.Label();
             this.lblMaterialID = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -258,8 +259,10 @@
             this.Controls.Add(this.txtMaterialName);
             this.Controls.Add(this.lblMaterialID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MaterialForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MaterialForm";
             this.Load += new System.EventHandler(this.MaterialForm_Load);
             this.panel1.ResumeLayout(false);

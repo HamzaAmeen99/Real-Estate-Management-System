@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MD_homeForm));
             this.buttonClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
             this.panelmid = new System.Windows.Forms.Panel();
-            this.labelgreet = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.project = new System.Windows.Forms.PictureBox();
             this.labelproj = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@
             this.progressBarHome = new System.Windows.Forms.ProgressBar();
             this.lblProgressHome = new System.Windows.Forms.Label();
             this.lblBudgetHome = new System.Windows.Forms.Label();
+            this.labelgreet = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tblMain.SuspendLayout();
@@ -140,18 +141,6 @@
             this.panelmid.Size = new System.Drawing.Size(880, 840);
             this.panelmid.TabIndex = 1;
             this.panelmid.Paint += new System.Windows.Forms.PaintEventHandler(this.panelmid_Paint);
-            // 
-            // labelgreet
-            // 
-            this.labelgreet.AutoSize = true;
-            this.labelgreet.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelgreet.ForeColor = System.Drawing.Color.White;
-            this.labelgreet.Location = new System.Drawing.Point(139, 26);
-            this.labelgreet.Name = "labelgreet";
-            this.labelgreet.Size = new System.Drawing.Size(566, 40);
-            this.labelgreet.TabIndex = 4;
-            this.labelgreet.Text = "BFS REAL ESTATE DEVELOPERS";
-            this.labelgreet.Click += new System.EventHandler(this.labelgreet_Click);
             // 
             // panel2
             // 
@@ -272,7 +261,7 @@
             this.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
-            this.btnOut.Location = new System.Drawing.Point(3, 662);
+            this.btnOut.Location = new System.Drawing.Point(1, 649);
             this.btnOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(303, 54);
@@ -318,10 +307,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-1, 274);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 285);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 37);
+            this.label3.Size = new System.Drawing.Size(194, 31);
             this.label3.TabIndex = 8;
             this.label3.Text = "Project Progress:";
             // 
@@ -385,10 +374,10 @@
             // lblProgressHome
             // 
             this.lblProgressHome.AutoSize = true;
-            this.lblProgressHome.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProgressHome.Location = new System.Drawing.Point(231, 274);
+            this.lblProgressHome.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgressHome.Location = new System.Drawing.Point(236, 285);
             this.lblProgressHome.Name = "lblProgressHome";
-            this.lblProgressHome.Size = new System.Drawing.Size(72, 37);
+            this.lblProgressHome.Size = new System.Drawing.Size(60, 31);
             this.lblProgressHome.TabIndex = 2;
             this.lblProgressHome.Text = "60%";
             // 
@@ -402,6 +391,18 @@
             this.lblBudgetHome.TabIndex = 1;
             this.lblBudgetHome.Text = "00";
             this.lblBudgetHome.Click += new System.EventHandler(this.lblTotalExpenses_Click);
+            // 
+            // labelgreet
+            // 
+            this.labelgreet.AutoSize = true;
+            this.labelgreet.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelgreet.ForeColor = System.Drawing.Color.White;
+            this.labelgreet.Location = new System.Drawing.Point(139, 26);
+            this.labelgreet.Name = "labelgreet";
+            this.labelgreet.Size = new System.Drawing.Size(566, 40);
+            this.labelgreet.TabIndex = 4;
+            this.labelgreet.Text = "BFS REAL ESTATE DEVELOPERS";
+            this.labelgreet.Click += new System.EventHandler(this.labelgreet_Click);
             // 
             // panel1
             // 
@@ -438,6 +439,7 @@
             this.Controls.Add(this.tblMain);
             this.Controls.Add(this.textBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MD_homeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

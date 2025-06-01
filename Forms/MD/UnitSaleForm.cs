@@ -118,7 +118,11 @@ namespace RECMS.Forms.MD
                             transaction.Commit();
 
                             MessageBox.Show("Sale recorded successfully!");
-                            this.Close();
+                            this.Hide();
+                            UnitsManagementForm unitsForm = new UnitsManagementForm();
+                            unitsForm.FormClosed += (s, args) => this.Close();
+                            unitsForm.Show();
+
                         }
                         catch (Exception ex)
                         {
@@ -139,8 +143,10 @@ namespace RECMS.Forms.MD
 
         private void UnitSaleForm_Load(object sender, EventArgs e)
         {
-            
-                txtCustomerID.Text = GetNextCustomerID();
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
+
+            txtCustomerID.Text = GetNextCustomerID();
                 // ... rest of your load code ...
             
             using (SqlConnection conn = new SqlConnection(connectionString))

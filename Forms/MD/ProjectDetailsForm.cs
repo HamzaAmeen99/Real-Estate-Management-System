@@ -172,6 +172,8 @@ namespace RECMS.Forms
 
         private async void ProjectDetailsForm_Load(object sender, EventArgs e)
         {
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, panel1);
             try
             {
                 // Load projects into ComboBox

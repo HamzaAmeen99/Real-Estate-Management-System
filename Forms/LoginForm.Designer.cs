@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,20 +40,20 @@
             this.lblstUser = new System.Windows.Forms.Label();
             this.lblstPW = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnTogglePassword = new System.Windows.Forms.PictureBox();
             this.cross = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnTogglePassword = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cross)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTogglePassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cross)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,6 +203,30 @@
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // cross
+            // 
+            this.cross.Image = global::RECMS.Properties.Resources.WhatsApp_Image_2025_05_28_at_14_42_30_0e0faf68_removebg_preview;
+            this.cross.Location = new System.Drawing.Point(1166, 9);
+            this.cross.Name = "cross";
+            this.cross.Size = new System.Drawing.Size(30, 30);
+            this.cross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cross.TabIndex = 19;
+            this.cross.TabStop = false;
+            this.cross.Click += new System.EventHandler(this.cross_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(142)))), ((int)(((byte)(136)))));
+            this.pictureBox1.Image = global::RECMS.Properties.Resources.BFS_White;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -260,30 +285,6 @@
             this.btnTogglePassword.TabStop = false;
             this.btnTogglePassword.Click += new System.EventHandler(this.btnTogglePassword_Click_1);
             // 
-            // cross
-            // 
-            this.cross.Image = global::RECMS.Properties.Resources.WhatsApp_Image_2025_05_28_at_14_42_30_0e0faf68_removebg_preview;
-            this.cross.Location = new System.Drawing.Point(1166, 9);
-            this.cross.Name = "cross";
-            this.cross.Size = new System.Drawing.Size(30, 30);
-            this.cross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cross.TabIndex = 19;
-            this.cross.TabStop = false;
-            this.cross.Click += new System.EventHandler(this.cross_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(142)))), ((int)(((byte)(136)))));
-            this.pictureBox1.Image = global::RECMS.Properties.Resources.BFS_White;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RECMS.Properties.Resources.Color_change;
@@ -308,6 +309,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -315,12 +317,12 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cross)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTogglePassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cross)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

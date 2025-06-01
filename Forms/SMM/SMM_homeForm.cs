@@ -105,6 +105,10 @@ namespace RECMS.Forms.SMM
 
         private async void SMM_homeForm_Load(object sender, EventArgs e)
         {
+
+            // Enable drag
+            FormDragHelper.MakeDraggable(this, textBox6);
+
             await LoadProjectsAsync();
             if (cmbProjects.Items.Count > 0)
             {

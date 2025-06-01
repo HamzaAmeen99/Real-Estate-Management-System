@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProjectForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cross = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtProjectID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,12 +41,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.numBudget = new System.Windows.Forms.NumericUpDown();
-            this.cross = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cross)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBudget)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,6 +58,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(535, 48);
             this.panel1.TabIndex = 1;
+            // 
+            // cross
+            // 
+            this.cross.Image = global::RECMS.Properties.Resources.WhatsApp_Image_2025_05_28_at_14_423;
+            this.cross.Location = new System.Drawing.Point(512, 3);
+            this.cross.Name = "cross";
+            this.cross.Size = new System.Drawing.Size(20, 20);
+            this.cross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cross.TabIndex = 22;
+            this.cross.TabStop = false;
+            this.cross.Click += new System.EventHandler(this.cross_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RECMS.Properties.Resources.BFS_White;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -152,28 +175,6 @@
             this.numBudget.Size = new System.Drawing.Size(242, 22);
             this.numBudget.TabIndex = 10;
             // 
-            // cross
-            // 
-            this.cross.Image = global::RECMS.Properties.Resources.WhatsApp_Image_2025_05_28_at_14_423;
-            this.cross.Location = new System.Drawing.Point(512, 3);
-            this.cross.Name = "cross";
-            this.cross.Size = new System.Drawing.Size(20, 20);
-            this.cross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cross.TabIndex = 22;
-            this.cross.TabStop = false;
-            this.cross.Click += new System.EventHandler(this.cross_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RECMS.Properties.Resources.BFS_White;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // AddProjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,15 +190,17 @@
             this.Controls.Add(this.txtProjectID);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddProjectForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProjectForm";
             this.Load += new System.EventHandler(this.AddProjectForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numBudget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cross)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBudget)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
